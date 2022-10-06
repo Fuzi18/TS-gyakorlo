@@ -24,14 +24,4 @@ for (let b of books) {
 }
 
 
-function bestof(booklist : Array<Book>) : Book {
-    let best : Book = booklist[0];
-    for (let i : number = 0; i < booklist.length; i++) {
-        if(best.getRating() > booklist[i].getRating()) {
-            best = booklist[i];
-        }
-    }
-    return best;
-}
 
-console.log("A legjobbra értékelt könyv: "+bestof(books).toString());
